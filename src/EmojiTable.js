@@ -11,7 +11,7 @@ class EmojiTable extends Component {
                     <tr>
                         <th>Emoji</th>
                         <th>Name</th>
-                        <th>Keywords</th>
+                        <th className="hidden-sm hidden-xs">Keywords</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -21,7 +21,7 @@ class EmojiTable extends Component {
                                 <tr key={index}>
                                     <td>{emoji.char}</td>
                                     <td>{emoji.name}</td>
-                                    <td>{emoji.keywords}</td>
+                                    <td className="hidden-sm hidden-xs">{emoji.keywords}</td>
                                 </tr>
                             )
                         })
